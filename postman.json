@@ -1,0 +1,466 @@
+{
+  "item": [
+    {
+      "request": {
+        "method": "POST",
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n    \"listStatus\": \"\", //展示状态 all,dealing,done\n    \"custId\": \"\" //仅测试使用\n}"
+        },
+        "url": {
+          "path": [
+            "api",
+            "eccs",
+            "miniapp",
+            "right",
+            "order",
+            "list"
+          ],
+          "query": [],
+          "host": "{{prosper-cloud-eccs-c}}",
+          "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/list"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "POST",
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"listStatus\": \"\", //展示状态 all,dealing,done\n    \"custId\": \"\" //仅测试使用\n}"
+            },
+            "url": {
+              "query": [],
+              "host": "{{prosper-cloud-eccs-c}}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "responseTime": 34,
+          "name": "列表查询-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "周一, 06 3月 202313:16:41 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n  \"message\": \"\",\n  \"success\": false,\n  \"timestamp\": \"\",\n  \"code\": 0,\n  \"data\": [\n    {\n      \"itemId\": \"\",\n      \"itemName\": \"\",\n      \"custId\": \"\",\n      \"custName\": \"\",\n      \"applyTime\": \"\",\n      \"status\": 0,\n      \"dealStatus\": \"\",\n      \"showEditFlag\": \"\",\n      \"showRetractFlag\": \"\"\n    }\n  ],\n  \"traceId\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "列表查询"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "description": "",
+        "header": [],
+        "url": {
+          "path": [
+            "api",
+            "eccs",
+            "miniapp",
+            "right",
+            "order",
+            "detail",
+            ":id"
+          ],
+          "query": [],
+          "host": "{{prosper-cloud-eccs-c}}",
+          "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/detail/{id}"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "GET",
+            "description": "",
+            "header": [],
+            "url": {
+              "path": [
+                "api",
+                "eccs",
+                "miniapp",
+                "right",
+                "order",
+                "detail",
+                ":id"
+              ],
+              "query": [],
+              "host": "{{prosper-cloud-eccs-c}}",
+              "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/detail/{id}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "responseTime": 47,
+          "name": "工单详情-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "周一, 06 3月 202313:16:41 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n  \"message\": \"\",\n  \"success\": false,\n  \"timestamp\": \"\",\n  \"code\": 0,\n  \"data\": {\n    \"id\": 0,\n    \"contactName\": \"\",\n    \"contactTel\": \"\",\n    \"province\": \"\",\n    \"city\": \"\",\n    \"county\": \"\",\n    \"address\": \"\",\n    \"appointmentTime\": \"\",\n    \"files\": [\n      \"\"\n    ],\n    \"rejectFlag\": \"\"\n  },\n  \"traceId\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "工单详情"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n    \"rightCode\": \"\", //权益编码\n    \"itemCode\": \"\", //项目编码\n    \"custId\": 0, //使用者id\n    \"custName\": \"\", //使用者名称\n    \"itemId\": 0, //项目id\n    \"rightId\": 0, //权益id\n    \"itemName\": \"\", //项目名称\n    \"contactName\": \"\", //联系人姓名\n    \"contactTel\": \"\", //联系电话\n    \"province\": \"\", //申请服务地址-省\n    \"city\": \"\", //申请服务地址-市\n    \"county\": \"\", //申请服务地址-区（县）\n    \"address\": \"\", //申请详细地址\n    \"appointmentStartTime\": \"\", //期望服务开始时间\n    \"appointmentEndTime\": \"\", //期望服务结束时间\n    \"files\": [ //文件列表\n        {\n            \"fileName\": \"\", //文件名\n            \"fileUrl\": \"\" //文件路径\n        }\n    ]\n}"
+        },
+        "url": {
+          "path": [
+            "api",
+            "eccs",
+            "miniapp",
+            "right",
+            "order",
+            "submit"
+          ],
+          "query": [],
+          "host": "{{prosper-cloud-eccs-c}}",
+          "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/submit"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "POST",
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"rightCode\": \"\", //权益编码\n    \"itemCode\": \"\", //项目编码\n    \"custId\": 0, //使用者id\n    \"custName\": \"\", //使用者名称\n    \"itemId\": 0, //项目id\n    \"rightId\": 0, //权益id\n    \"itemName\": \"\", //项目名称\n    \"contactName\": \"\", //联系人姓名\n    \"contactTel\": \"\", //联系电话\n    \"province\": \"\", //申请服务地址-省\n    \"city\": \"\", //申请服务地址-市\n    \"county\": \"\", //申请服务地址-区（县）\n    \"address\": \"\", //申请详细地址\n    \"appointmentStartTime\": \"\", //期望服务开始时间\n    \"appointmentEndTime\": \"\", //期望服务结束时间\n    \"files\": [ //文件列表\n        {\n            \"fileName\": \"\", //文件名\n            \"fileUrl\": \"\" //文件路径\n        }\n    ]\n}"
+            },
+            "url": {
+              "query": [],
+              "host": "{{prosper-cloud-eccs-c}}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "responseTime": 12,
+          "name": "工单提交接口-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "周一, 06 3月 202313:16:41 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n  \"message\": \"\",\n  \"success\": false,\n  \"timestamp\": \"\",\n  \"code\": 0,\n  \"data\": {\n    \"orderNo\": \"\"\n  },\n  \"traceId\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "工单提交接口"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n    \"id\": 0, //工单详情id\n    \"contactName\": \"\", //联系人姓名\n    \"contactTel\": \"\", //联系电话\n    \"address\": \"\", //申请详细地址\n    \"serviceAddress\": \"\", //申请详细地址\n    \"appointmentStartTime\": \"\", //期望服务开始时间\n    \"appointmentEndTime\": \"\", //期望服务结束时间\n    \"files\": [ //文件列表\n        {\n            \"fileName\": \"\", //文件名\n            \"fileUrl\": \"\" //文件路径\n        }\n    ]\n}"
+        },
+        "url": {
+          "path": [
+            "api",
+            "eccs",
+            "miniapp",
+            "right",
+            "order",
+            "edit"
+          ],
+          "query": [],
+          "host": "{{prosper-cloud-eccs-c}}",
+          "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/edit"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "POST",
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"id\": 0, //工单详情id\n    \"contactName\": \"\", //联系人姓名\n    \"contactTel\": \"\", //联系电话\n    \"address\": \"\", //申请详细地址\n    \"serviceAddress\": \"\", //申请详细地址\n    \"appointmentStartTime\": \"\", //期望服务开始时间\n    \"appointmentEndTime\": \"\", //期望服务结束时间\n    \"files\": [ //文件列表\n        {\n            \"fileName\": \"\", //文件名\n            \"fileUrl\": \"\" //文件路径\n        }\n    ]\n}"
+            },
+            "url": {
+              "query": [],
+              "host": "{{prosper-cloud-eccs-c}}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "responseTime": 87,
+          "name": "工单修改接口-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "周一, 06 3月 202313:16:41 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n  \"message\": \"\",\n  \"success\": false,\n  \"timestamp\": \"\",\n  \"code\": 0,\n  \"data\": {\n    \"orderNo\": \"\"\n  },\n  \"traceId\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "工单修改接口"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "description": "",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text",
+            "description": ""
+          }
+        ],
+        "url": {
+          "path": [
+            "api",
+            "eccs",
+            "miniapp",
+            "right",
+            "order",
+            "retract",
+            ":id"
+          ],
+          "query": [],
+          "host": "{{prosper-cloud-eccs-c}}",
+          "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/retract/{id}"
+        }
+      },
+      "response": [
+        {
+          "originalRequest": {
+            "method": "POST",
+            "description": "",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "url": {
+              "path": [
+                "api",
+                "eccs",
+                "miniapp",
+                "right",
+                "order",
+                "retract",
+                ":id"
+              ],
+              "query": [],
+              "host": "{{prosper-cloud-eccs-c}}",
+              "raw": "{{prosper-cloud-eccs-c}}/api/eccs/miniapp/right/order/retract/{id}"
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "code": 200,
+          "responseTime": 73,
+          "name": "工单取消接口-Example",
+          "header": [
+            {
+              "name": "date",
+              "key": "date",
+              "value": "周一, 06 3月 202313:16:41 GMT",
+              "description": "The date and time that the message was sent"
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Apache-Coyote/1.1",
+              "description": "A name for the server"
+            },
+            {
+              "name": "transfer-encoding",
+              "key": "transfer-encoding",
+              "value": "chunked",
+              "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json;charset\u003dUTF-8"
+            }
+          ],
+          "body": "{\n  \"message\": \"\",\n  \"success\": false,\n  \"timestamp\": \"\",\n  \"code\": 0,\n  \"data\": {\n    \"orderNo\": \"\"\n  },\n  \"traceId\": \"\"\n}",
+          "status": "OK"
+        }
+      ],
+      "name": "工单取消接口"
+    }
+  ],
+  "info": {
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "name": "权益工单相关接口-20230306131641",
+    "description": "权益工单相关接口"
+  }
+}
