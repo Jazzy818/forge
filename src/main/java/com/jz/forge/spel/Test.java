@@ -1,4 +1,4 @@
-package spel;
+package com.jz.forge.spel;
 
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;

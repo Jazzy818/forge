@@ -1,4 +1,4 @@
-package leetcode.合并有序链表;
+package com.jz.forge.leetcode.合并有序链表;
 
 /**
  * 合并有序链表

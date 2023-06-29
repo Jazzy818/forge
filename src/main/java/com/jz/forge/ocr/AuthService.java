@@ -1,4 +1,4 @@
-package ocr;
+package com.jz.forge.ocr;
 
 import com.alibaba.fastjson2.JSON;
 
